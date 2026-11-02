@@ -1,0 +1,151 @@
+<html dir="ltr" lang="it"><head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="google" value="notranslate">
+
+
+
+<style>
+
+  h1 {
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th {
+    cursor: pointer;
+  }
+
+  td.detailsColumn {
+    padding-inline-start: 2em;
+    text-align: end;
+    white-space: nowrap;
+  }
+
+  a.icon {
+    padding-inline-start: 1.5em;
+    text-decoration: none;
+    user-select: auto;
+  }
+
+  a.icon:hover {
+    text-decoration: underline;
+  }
+
+  a.file {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABEElEQVR42nRRx3HDMBC846AHZ7sP54BmWAyrsP588qnwlhqw/k4v5ZwWxM1hzmGRgV1cYqrRarXoH2w2m6qqiqKIR6cPtzc3xMSML2Te7XZZlnW7Pe/91/dX47WRBHuA9oyGmRknzGDjab1ePzw8bLfb6WRalmW4ip9FDVpYSWZgOp12Oh3nXJ7nxoJSGEciteP9y+fH52q1euv38WosqA6T2gGOT44vry7BEQtJkMAMMpa6JagAMcUfWYa4hkkzAc7fFlSjwqCoOUYAF5RjHZPVCFBOtSBGfgUDji3c3jpibeEMQhIMh8NwshqyRsBJgvF4jMs/YlVR5KhgNpuBLzk0OcUiR3CMhcPaOzsZiAAA/AjmaB3WZIkAAAAASUVORK5CYII=") left top no-repeat;
+  }
+
+  a.dir {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABt0lEQVR42oxStZoWQRCs2cXdHTLcHZ6EjAwnQWIkJyQlRt4Cd3d3d1n5d7q7ju1zv/q+mh6taQsk8fn29kPDRo87SDMQcNAUJgIQkBjdAoRKdXjm2mOH0AqS+PlkP8sfp0h93iu/PDji9s2FzSSJVg5ykZqWgfGRr9rAAAQiDFoB1OfyESZEB7iAI0lHwLREQBcQQKqo8p+gNUCguwCNAAUQAcFOb0NNGjT+BbUC2YsHZpWLhC6/m0chqIoM1LKbQIIBwlTQE1xAo9QDGDPYf6rkTpPc92gCUYVJAZjhyZltJ95f3zuvLYRGWWCUNkDL2333McBh4kaLlxg+aTmyL7c2xTjkN4Bt7oE3DBP/3SRz65R/bkmBRPGzcRNHYuzMjaj+fdnaFoJUEdTSXfaHbe7XNnMPyqryPcmfY+zURaAB7SHk9cXSH4fQ5rojgCAVIuqCNWgRhLYLhJB4k3iZfIPtnQiCpjAzeBIRXMA6emAqoEbQSoDdGxFUrxS1AYcpaNbBgyQBGJEOnYOeENKR/iAd1npusI4C75/c3539+nbUjOgZV5CkAU27df40lH+agUdIuA/EAgDmZnwZlhDc0wAAAABJRU5ErkJggg==") left top no-repeat;
+  }
+
+  a.up {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42myTA+w1RxRHz+zftmrbdlTbtq04qRGrCmvbDWp9tq3a7tPcub8mj9XZ3eHOGQdJAHw77/LbZuvnWy+c/CIAd+91CMf3bo+bgcBiBAGIZKXb19/zodsAkFT+3px+ssYfyHTQW5tr05dCOf3xN49KaVX9+2zy1dX4XMk+5JflN5MBPL30oVsvnvEyp+18Nt3ZAErQMSFOfelCFvw0HcUloDayljZkX+MmamTAMTe+d+ltZ+1wEaRAX/MAnkJdcujzZyErIiVSzCEvIiq4O83AG7LAkwsfIgAnbncag82jfPPdd9RQyhPkpNJvKJWQBKlYFmQA315n4YPNjwMAZYy0TgAweedLmLzTJSTLIxkWDaVCVfAbbiKjytgmm+EGpMBYW0WwwbZ7lL8anox/UxekaOW544HO0ANAshxuORT/RG5YSrjlwZ3lM955tlQqbtVMlWIhjwzkAVFB8Q9EAAA3AFJ+DR3DO/Pnd3NPi7H117rAzWjpEs8vfIqsGZpaweOfEAAFJKuM0v6kf2iC5pZ9+fmLSZfWBVaKfLLNOXj6lYY0V2lfyVCIsVzmcRV9Y0fx02eTaEwhl2PDrXcjFdYRAohQmS8QEFLCLKGYA0AeEakhCCFDXqxsE0AQACgAQp5w96o0lAXuNASeDKWIvADiHwigfBINpWKtAXJvCEKWgSJNbRvxf4SmrnKDpvZavePu1K/zu/due1X/6Nj90MBd/J2Cic7WjBp/jUdIuA8AUtd65M+PzXIAAAAASUVORK5CYII=") left top no-repeat;
+  }
+
+  html[dir=rtl] a {
+    background-position-x: right;
+  }
+
+  #parentDirLinkBox {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+</style>
+
+<title id="title">A momentary lapse of reason</title>
+
+</head>
+
+<body>
+
+<h2 id="header">A momentary lapse of reason</h2>
+
+
+
+<table>
+
+<thead>
+	<tr>
+		<td style="text-align: center;">
+			<a href="/Pink%20Floyd/A momentary lapse of reason/A momentary lapse of reason" data-preview-image-ranking="2">
+			   <img  src="/Pink%20Floyd/A momentary lapse of reason/A momentary lapse of reason.jpg" style="width:40%" title="A momentary lapse of reason" >
+			</a>
+		</td> 
+	</tr>
+</thead>
+
+
+
+ <!-- 		http://localhost/A momentary lapse of reason.html
+
+  
+  <tbody id="tbody">
+  
+  <tr><td data-value="A new machine (part one).mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/A%20new%20machine%20(part%20one).mp3">A new machine (part one).mp3</a></td>
+</tr>
+
+<tr><td data-value="Learning to flay.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/Learning%20to%20flay.mp3">Learning to flay.mp3</a></td></tr>
+
+<tr><td data-value="On the turnig away.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/On%20the%20turnig%20away.mp3">On the turnig away.mp3</a></td></tr>
+
+<tr><td data-value="One slip.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/One%20slip.mp3">One slip.mp3</a></td></tr>
+
+<tr><td data-value="Round and Around.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/Round%20and%20Around.mp3">Round and Around.mp3</a></td></tr>
+
+<tr><td data-value="Signs of live.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/Signs%20of%20live.mp3">Signs of live.mp3</a></td></tr>
+
+<tr><td data-value="Sorrow.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/Sorrow.mp3">Sorrow.mp3</a></td></tr>
+
+<tr><td data-value="Terminal frost.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/Terminal%20frost.mp3">Terminal frost.mp3</a></td></tr>
+
+<tr><td data-value="The dogs of war.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/The%20dogs%20of%20war.mp3">The dogs of war.mp3</a></td></tr>
+
+<tr><td data-value="Yet another movie.mp3"><a class="icon file" draggable="true" href="/Pink%20Floyd/A%20momentary%20lapse%20of%20reason/Yet%20another%20movie.mp3">Yet another movie.mp3</a></td></tr>
+  
+  </tbody>
+   
+ -->  
+
+ <!-- 		https://fil55.github.io/A momentary lapse of reason/  -->
+   
+  <tbody id="tbody">
+  
+  <tr><td data-value="A new machine (part one).mp3"><a class="icon file" draggable="true" href="A%20new%20machine%20(part%20one).mp3">A new machine (part one).mp3</a></td>
+</tr>
+
+<tr><td data-value="Learning to flay.mp3"><a class="icon file" draggable="true" href="Learning%20to%20flay.mp3">Learning to flay.mp3</a></td></tr>
+
+<tr><td data-value="On the turnig away.mp3"><a class="icon file" draggable="true" href="On%20the%20turnig%20away.mp3">On the turnig away.mp3</a></td></tr>
+
+<tr><td data-value="One slip.mp3"><a class="icon file" draggable="true" href="One%20slip.mp3">One slip.mp3</a></td></tr>
+
+<tr><td data-value="Round and Around.mp3"><a class="icon file" draggable="true" href="Round%20and%20Around.mp3">Round and Around.mp3</a></td></tr>
+
+<tr><td data-value="Signs of live.mp3"><a class="icon file" draggable="true" href="Signs%20of%20live.mp3">Signs of live.mp3</a></td></tr>
+
+<tr><td data-value="Sorrow.mp3"><a class="icon file" draggable="true" href="Sorrow.mp3">Sorrow.mp3</a></td></tr>
+
+<tr><td data-value="Terminal frost.mp3"><a class="icon file" draggable="true" href="Terminal%20frost.mp3">Terminal frost.mp3</a></td></tr>
+
+<tr><td data-value="The dogs of war.mp3"><a class="icon file" draggable="true" href="The%20dogs%20of%20war.mp3">The dogs of war.mp3</a></td></tr>
+
+<tr><td data-value="Yet another movie.mp3"><a class="icon file" draggable="true" href="Yet%20another%20movie.mp3">Yet another movie.mp3</a></td></tr>
+  
+  </tbody>
+  
+  
+</table>
+
+  
+</table>
+
+
+</body></html>
